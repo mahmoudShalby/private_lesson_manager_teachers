@@ -20,8 +20,6 @@ async def read_root():
 # Use Django ORM and models
 from data.models import Stage
 from django.core.serializers import serialize
-from threading import Thread
-from asyncio import get_event_loop
 
 @app.get("/grades/")
 def read_grades():
